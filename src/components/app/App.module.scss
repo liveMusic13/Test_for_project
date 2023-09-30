@@ -1,0 +1,136 @@
+@import '../../assets/styles/variables';
+
+.wrapper {
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	> h1 {
+		font-size: 40px;
+		font-weight: 900;
+		margin-bottom: 50px;
+	}
+
+	> .block_task {
+		border: 5px solid $color_two;
+		border-radius: 10px;
+		padding: 15px;
+		width: 600px;
+		min-height: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+
+		> h2 {
+			font-size: 30px;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+
+		> .task {
+			padding: 8px;
+			border: 3px solid $color_two;
+			border-radius: 8px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			&:hover {
+				cursor: pointer;
+				border: 3px solid $color_four;
+			}
+
+			> .title {
+				width: 80%;
+			}
+
+			> .done {
+				padding: 0px 5px;
+				border-left: 3px solid $color_two;
+				background-color: $color_one;
+				font-size: 20px;
+				color: $color_three;
+
+				&:hover {
+					border-left: 3px solid $color_four;
+					cursor: pointer;
+				}
+			}
+
+			> .delete {
+				padding-left: 5px;
+				border-left: 3px solid $color_two;
+				background-color: $color_one;
+				font-size: 20px;
+				color: $color_three;
+
+				&:hover {
+					border-left: 3px solid $color_four;
+					cursor: pointer;
+				}
+			}
+		}
+
+		> .taskDone {
+			padding: 8px;
+			border: 3px solid $color_two;
+			border-radius: 8px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			background-color: $color_two;
+
+			&:hover {
+				cursor: pointer;
+				border: 3px solid $color_four;
+			}
+
+			> .title {
+				width: 80%;
+			}
+
+			> .done {
+				padding: 0px 5px;
+				border-left: 3px solid $color_two;
+				background-color: rgba($color: $color_one, $alpha: 0);
+				font-size: 20px;
+				color: $color_three;
+
+				&:hover {
+					border-left: 3px solid $color_four;
+					cursor: pointer;
+				}
+			}
+
+			> .delete {
+				padding-left: 5px;
+				border-left: 3px solid $color_two;
+				background-color: rgba($color: $color_one, $alpha: 0);
+				font-size: 20px;
+				color: $color_three;
+
+				&:hover {
+					border-left: 3px solid $color_four;
+					cursor: pointer;
+				}
+			}
+		}
+
+		> button {
+			background-color: $color_one;
+			color: $color_two;
+			font-size: 20px;
+			padding: 5px;
+			border: 3px solid $color_three;
+			border-radius: 20px;
+
+			&:hover {
+				background-color: $color_four;
+				border-color: $color_four;
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+@import '../../assets/styles/variables';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	font-size: 40px;
+	font-weight: 900;
+
+	> .title_page {
+		align-self: center;
+	}
+
+	> .block_task {
+		align-self: center;
+		width: 700px;
+		min-height: 300px;
+		background-color: $color_two;
+		color: $color_four;
+		border-radius: 20px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+
+		> input {
+			text-align: center;
+			font-size: 30px;
+			border: 1px solid $color_three;
+			border-radius: 10px;
+			padding: 10px;
+			margin-bottom: 20px;
+			outline: none;
+			background-color: $color_two;
+			color: $color_four;
+
+			&::placeholder {
+				color: $color_four;
+			}
+		}
+		> textarea {
+			font-size: 20px;
+			border: 1px solid $color_three;
+			border-radius: 10px;
+			padding: 10px;
+			min-height: 200px;
+			outline: none;
+			background-color: $color_two;
+			color: $color_four;
+		}
+	}
+
+	> button {
+		align-self: center;
+		background-color: $color_two;
+		color: $color_three;
+		width: 200px;
+		height: 50px;
+		border-radius: 15px;
+		font-size: 25px;
+
+		&:hover {
+			cursor: pointer;
+			border: 3px dotted $color_four;
+		}
+	}
+}
